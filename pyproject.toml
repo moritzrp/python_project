@@ -1,0 +1,25 @@
+[project]
+name = "python-project"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "moritzrp",email = "50995474+moritzrp@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "python_project", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ruff (>=0.14.6,<0.15.0)",
+    "pre-commit (>=4.5.0,<5.0.0)",
+    "pylint (>=4.0.3,<5.0.0)"
+]
