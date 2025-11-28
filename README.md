@@ -6,3 +6,4 @@ Base python project created with poetry along with
 - pre-commit hooks
 - ruff
 - poetry
+- devcontainer
